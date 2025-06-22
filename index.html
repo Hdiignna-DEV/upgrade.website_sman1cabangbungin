@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMAN 1 Cabangbungin - Sekolah Unggulan Kabupaten Bekasi</title>
+    <meta name="description" content="Website Resmi SMAN 1 Cabangbungin - Sekolah Berprestasi dengan Fasilitas Modern">
+    <meta name="keywords" content="SMAN 1 Cabangbungin, SMA Negeri Bekasi, Sekolah Unggulan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sman1cabangbungin.sch.id/">
+    <meta property="og:title" content="SMAN 1 Cabangbungin">
+    <meta property="og:description" content="Website Resmi SMAN 1 Cabangbungin - Sekolah Berprestasi dengan Fasilitas Modern">
+    <meta property="og:image" content="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-600x563.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sman1cabangbungin.sch.id/">
+    <meta property="twitter:title" content="SMAN 1 Cabangbungin">
+    <meta property="twitter:description" content="Website Resmi SMAN 1 Cabangbungin - Sekolah Berprestasi dengan Fasilitas Modern">
+    <meta property="twitter:image" content="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-600x563.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.sman1cabangbungin.sch.id/upload/imagecache/90885436favicon-16x16-32x32.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0056b3;
+            --primary-light: #e1f0ff;
+            --secondary: #f0ad4e;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --text: #333333;
+            --text-light: #6c757d;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #17a2b8;
+            
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            
+            --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            
+            --border-radius: 0.375rem;
+            --border-radius-lg: 0.5rem;
+            --border-radius-xl: 1rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            line-height: 1.7;
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--dark);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+        
+        /* Header Styles */
+        .top-bar {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+        
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .news-ticker {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        .news-ticker-label {
+            font-weight: 600;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        
+        .news-ticker-content {
+            display: inline-block;
+            animation: ticker 20s linear infinite;
+        }
+        
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .news-ticker-content a {
+            color: var(--white);
+            margin-right: 20px;
+        }
+        
+        .news-ticker-content a:hover {
+            color: var(--secondary);
+        }
+        
+        .datetime {
+            font-weight: 600;
+        }
+        
+        /* Main Header */
+        .main-header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .main-header.scrolled {
+            box-shadow: var(--shadow);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .school-logo {
+            width: 70px;
+            height: 70px;
+            margin-right: 15px;
+            border-radius: 50%;
+            object-fit: contain;
+            background-color: var(--primary-light);
+            padding: 5px;
+        }
+        
+        .school-info h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+        
+        .school-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        
+        /* Navigation */
+        .main-nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin-bottom: 0;
+        }
+        
+        .nav-item {
+            position: relative;
+            margin-left: 15px;
+        }
+        
+        .nav-link {
+            display: block;
+            padding: 10px 15px;
+            font-weight: 600;
+            color: var(--dark);
+            border-radius: var(--border-radius);
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+            background-color: var(--primary-light);
+        }
+        
+        .nav-link.active {
+            color: var(--white);
+            background-color: var(--primary);
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            border-radius: var(--border-radius);
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .dropdown-item {
+            display: block;
+            padding: 8px 20px;
+            color: var(--dark);
+        }
+        
+        .dropdown-item:hover {
+            color: var(--primary);
+            background-color: var(--primary-light);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 80vh;
+            min-height: 500px;
+            background-color: var(--primary);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-slider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+            max-width: 800px;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border: none;
+            border-radius: var(--border-radius-xl);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background-color: #e09d3a;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-outline-light {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        /* Quick Links */
+        .quick-links {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        
+        .quick-links .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .quick-link-card {
+            background-color: var(--light);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .quick-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .quick-link-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .quick-link-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .about-image img {
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .about-text h3 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: var(--light);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* News Section */
+        .news-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .news-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .news-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .news-card:hover .news-image img {
+            transform: scale(1.1);
+        }
+        
+        .news-content {
+            padding: 20px;
+        }
+        
+        .news-date {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+        
+        .news-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        
+        .news-excerpt {
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+        
+        .read-more {
+            font-weight: 600;
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 250px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 86, 179, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay i {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    margin: 0 15px;
+    text-align: center;
+}
+
+.testimonial-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 5px solid var(--primary-light);
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 0;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.contact-info {
+    padding: 30px;
+    background-color: var(--light);
+    border-radius: var(--border-radius-lg);
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.contact-form {
+    padding: 30px;
+    background-color: var(--light);
+    border-radius: var(--border-radius-lg);
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-body);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: var(--border-radius-xl);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 60px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: var(--white);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--secondary);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
+.footer-contact-item {
+    display: flex;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contact-icon {
+    margin-right: 10px;
+    color: var(--secondary);
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: var(--shadow);
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary);
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-item {
+        margin: 0 0 15px 0;
+    }
+    
+    .nav-link {
+        padding: 10px 0;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        padding: 10px 0 0 20px;
+        display: none;
+    }
+    
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image, .about-text {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="news-ticker">
+                <span class="news-ticker-label"><i class="fas fa-bullhorn"></i> BERITA TERKINI:</span>
+                <div class="news-ticker-content">
+                    <a href="#">HASIL PPDB 2025 TAHAP 1</a>
+                    <a href="#">DIES NATALIS XXII SMAN 1 CABANGBUNGIN TAHUN 2024</a>
+                    <a href="#">SOSIALISASI PPDB (PENERIMAAN PESERTA DIDIK BARU) TAHUN 2024</a>
+                </div>
+            </div>
+            <div class="datetime">
+                <i class="far fa-calendar-alt"></i> <span id="date"></span> | 
+                <i class="far fa-clock"></i> <span id="time"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-107x100.png" alt="SMAN 1 Cabangbungin Logo" class="school-logo">
+                    <div class="school-info">
+                        <h1>SMAN 1 CABANGBUNGIN</h1>
+                        <p>KABUPATEN BEKASI</p>
+                    </div>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Sejarah</a></li>
+                                <li><a href="#" class="dropdown-item">Visi & Misi</a></li>
+                                <li><a href="#" class="dropdown-item">Struktur Organisasi</a></li>
+                                <li><a href="#" class="dropdown-item">Data Guru</a></li>
+                                <li><a href="#" class="dropdown-item">Data TU</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kurikulum</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Kalender Akademik</a></li>
+                                <li><a href="#" class="dropdown-item">Data Kelas</a></li>
+                                <li><a href="#" class="dropdown-item">Silabus</a></li>
+                                <li><a href="#" class="dropdown-item">PBP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kesiswaan</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Data Siswa</a></li>
+                                <li><a href="#" class="dropdown-item">MPK</a></li>
+                                <li><a href="#" class="dropdown-item">OSIS</a></li>
+                                <li><a href="#" class="dropdown-item">Ekstrakurikuler</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Fasilitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kontak</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://www.sman1cabangbungin.sch.id/upload/picture/56064015-DSC3235-2-jpg-1741611800256.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('https://www.sman1cabangbungin.sch.id/upload/picture/67506993WhatsAppImage2023-04-05at10.03.08.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('https://www.sman1cabangbungin.sch.id/upload/picture/56064015-DSC3235-2-jpg-1741611800256.jpg');"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang di SMAN 1 Cabangbungin</h1>
+            <p class="hero-subtitle">Sekolah Unggulan dengan Pendidikan Berkualitas di Kabupaten Bekasi</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary mr-3">Lihat Profil Sekolah</a>
+                <a href="#" class="btn btn-outline-light">Virtual Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="quick-link-card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="quick-link-title">Penerimaan Siswa Baru</h3>
+                <p>Informasi lengkap tentang PPDB tahun ajaran 2025/2026</p>
+                <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="quick-link-card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3 class="quick-link-title">Kalender Akademik</h3>
+                <p>Jadwal kegiatan akademik dan non-akademik tahun ini</p>
+                <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="quick-link-card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="quick-link-title">Prestasi Siswa</h3>
+                <p>Prestasi terbaru siswa SMAN 1 Cabangbungin</p>
+                <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="quick-link-card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3 class="quick-link-title">Berita Terkini</h3>
+                <p>Update informasi dan kegiatan terbaru sekolah</p>
+                <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Sambutan Kepala Sekolah</h2>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/78434044kepsek_baru-300x400.png" alt="Kepala Sekolah SMAN 1 Cabangbungin">
+                    </div>
+                    
+                    <div class="about-text">
+                        <h3>Assalamu'alaikum Warahmatullahi Wabarakatuh</h3>
+                        <p>Salam sejahtera untuk kita semua.</p>
+                        <p>Kita panjatkan puji dan syukur ke hadirat Tuhan Yang Maha Esa, karena atas limpahan rahmat, dan karunia-Nya sehingga Website sekolah dengan https://www.sman1cabangbungin.sch.id/ dapat terus kita kembangkan. Ucapan terima kasih yang tidak terhingga kami sampaikan kepada semua pihak yang sudah memberikan dukungan dan kerja keras demi kelancaran pengembangan Website ini.</p>
+                        <p>Selamat datang di Website resmi Sekolah Menengah Atas Negeri 1 Cabangbungin. Di era digital saat ini, website sekolah merupakan pintu gerbang penyebarluasan berbagai informasi berbagai kegiatan dan capaian SMA Negeri 1 Cabangbungin terkini.</p>
+                        <p>Website ini juga diharapkan menjadi media pembelajaran, tempat menuangkan ide dan gagasan yang dapat membangun budaya literat sehingga mencerdaskan pembacanya. Penuangan tulisan tersebut bisa berbentuk blog, e-learning, karya dan media pembelajaran yang dibuat oleh peserta didik, tenaga pendidik dan tenaga kependidikan.</p>
+                        <p>Di sisi lain kami sungguh berharap Website ini juga dapat menjadi sarana silaturahmi dan komunikasi antara sekolah dengan para alumni di berbagai tempat, sebagai sebuah keluarga besar yang solid serta dapat berkontribusi dalam memajukan pendidikan di SMA Negeri 1 Cabangbungin tercinta.</p>
+                        <p>Kami menyadari website SMA Negeri 1 Cabangbungin ini masih memiliki banyak kekurangan. Oleh karena itu, kami akan terus belajar dan meng-update diri, sehingga konten dan kualitas tampilan website sekolah ini akan semakin berkembang. Kritik, saran, dan masukan berbagai pihak tentu sangat kami harapkan.</p>
+                        <p>Kepada tim pengembang dan pengelola, kami berharap agar dapat terus menyempurnakannya dengan penuh semangat. Terima kasih atas kerja sama yang telah dibangun, terus berkarya menuju SMA Negeri 1 Cabangbungin yang lebih berkualitas dan berjaya dalam mencerdaskan kehidupan anak bangsa Indonesia.</p>
+                        <p>SMA Negeri 1 Cabangbungin AMANAH, BERPRESTASI, LUAR BIASA, ALLAHU AKBAR</p>
+                        <p>Semoga Allah SWT meridhoi dan memberi kemudahan dalam menjalankan aktivitas kita. Aamiin YRA.</p>
+                        <p>Wassalamu alaikum Warahmatullahi Wabarakatuh</p>
+                        <p class="text-right">Kepala SMA Negeri 1 Cabangbungin</p>
+                        <p class="text-right">Susanto, S.Pd</p>
+                        <p class="text-right">NIP. 197203252006041009</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Keunggulan Kami</h2>
+                    <p>Beberapa alasan mengapa SMAN 1 Cabangbungin menjadi pilihan utama</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="feature-title">Guru Berkualitas</h3>
+                        <p>Tim pengajar berkompeten dengan kualifikasi tinggi dan pengalaman mengajar yang luas.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="feature-title">Fasilitas Lengkap</h3>
+                        <p>Laboratorium modern, perpustakaan digital, dan sarana olahraga yang memadai.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="feature-title">Prestasi Gemilang</h3>
+                        <p>Banyak prestasi akademik dan non-akademik di tingkat lokal maupun nasional.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="feature-title">Kurikulum Berbasis Kompetensi</h3>
+                        <p>Kurikulum yang mengembangkan potensi siswa secara holistik.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-title">Ekstrakurikuler Beragam</h3>
+                        <p>Berbagai pilihan kegiatan ekstrakurikuler untuk pengembangan minat bakat.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="feature-title">Jaringan Alumni</h3>
+                        <p>Jaringan alumni yang kuat mendukung dalam karier dan pendidikan lanjutan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- News Section -->
+        <section class="news-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Berita Terkini</h2>
+                    <p>Update informasi dan kegiatan terbaru dari SMAN 1 Cabangbungin</p>
+                </div>
+                
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/29633315Screenshot2025-06-19085445-480x360.png" alt="Berita Terkini">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">19 Jun 2025</div>
+                            <h4 class="news-title">HASIL PPDB 2025 TAHAP 1</h4>
+                            <p class="news-excerpt">Pengumuman hasil seleksi Penerimaan Peserta Didik Baru tahun ajaran 2025/2026 tahap pertama.</p>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/93006960WhatsAppImage2024-11-07at3.42.11PM-480x360.jpeg" alt="Berita Terkini">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">07 Nov 2024</div>
+                            <h4 class="news-title">DIES NATALIS XXII SMAN 1 CABANGBUNGIN TAHUN 2024</h4>
+                            <p class="news-excerpt">Peringatan hari jadi sekolah ke-22 dengan berbagai rangkaian acara menarik.</p>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/35452893WhatsAppImage2024-05-30at11.42.13AM-480x360.jpeg" alt="Berita Terkini">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">30 Mei 2024</div>
+                            <h4 class="news-title">SOSIALISASI PPDB (PENERIMAAN PESERTA DIDIK BARU) TAHUN 2024</h4>
+                            <p class="news-excerpt">Informasi lengkap tentang proses penerimaan siswa baru untuk tahun ajaran 2024/2025.</p>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-primary">Lihat Semua Berita</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Galeri Sekolah</h2>
+                    <p>Momen-momen berharga di SMAN 1 Cabangbungin</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/63819488pramuka001-400x200.jpg" alt="Kegiatan Ekstrakurikuler">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/6942117920210401_095232-400x200.jpg" alt="Prestasi Siswa">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/7356277WhatsAppImage2021-04-10at10.45.05-400x200.jpeg" alt="Kegiatan Belajar">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/65890858IMG_20210323_101746-400x200.jpg" alt="Upacara Bendera">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/4941225IMG_20210424_163908-400x200.jpg" alt="Kegiatan Olahraga">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/44839693petugasupacara_page-0001-400x200.jpg" alt="Kegiatan Siswa">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-primary">Lihat Galeri Lengkap</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Apa Kata Mereka?</h2>
+                    <p>Testimoni dari siswa, alumni, dan orang tua siswa</p>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Testimoni" class="testimonial-avatar">
+                        <p class="testimonial-text">"Guru-guru di SMAN 1 Cabangbungin sangat membantu saya dalam memahami pelajaran dan mengembangkan potensi diri. Fasilitas sekolah juga lengkap dan terawat dengan baik."</p>
+                        <h5 class="testimonial-author">Dewi Lestari</h5>
+                        <p class="testimonial-role">Siswa Kelas XII IPA</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Testimoni" class="testimonial-avatar">
+                        <p class="testimonial-text">"Sebagai alumni, saya sangat bangga dengan pendidikan yang saya dapatkan di SMAN 1 Cabangbungin. Bekal ilmu dan karakter yang diberikan sangat membantu dalam karier saya."</p>
+                        <h5 class="testimonial-author">Budi Santoso</h5>
+                        <p class="testimonial-role">Alumni, Karyawan PT Telkom</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimoni" class="testimonial-avatar">
+                        <p class="testimonial-text">"Saya sangat puas dengan pendidikan anak saya di SMAN 1 Cabangbungin. Selain prestasi akademik, anak saya juga berkembang secara karakter dan sosial."</p>
+                        <h5 class="testimonial-author">Siti Aminah</h5>
+                        <p class="testimonial-role">Orang Tua Siswa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="stat-number">1250+</div>
+                        <div class="stat-label">Siswa</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="stat-number">85</div>
+                        <div class="stat-label">Guru</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <i class="fas fa-trophy"></i>
+                        <div class="stat-number">230+</div>
+                        <div class="stat-label">Prestasi</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <i class="fas fa-building"></i>
+                        <div class="stat-number">22</div>
+                        <div class="stat-label">Tahun Berdiri</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+             <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Kami selalu siap menjawab pertanyaan Anda</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Raya Batujaya, Desa Lenggahjaya, Kec. Cabangbungin, Kab. Bekasi, Jawa Barat</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>(021) 12345678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sman1cabangbungin.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nama" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Pesan" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-107x100.png" alt="Logo SMAN 1 Cabangbungin" class="footer-logo">
+                    <p>SMAN 1 Cabangbungin adalah sekolah unggulan yang berkomitmen untuk memberikan pendidikan berkualitas kepada siswa.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Link Penting</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Kurikulum</a></li>
+                        <li><a href="#">Kesiswaan</a></li>
+                        <li><a href="#">Fasilitas</a></li>
+                        <li><a href="#">Berita</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontak Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                        <p>Jl. Raya Batujaya, Desa Lenggahjaya, Kec. Cabangbungin, Kab. Bekasi</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone footer-contact-icon"></i>
+                        <p>(021) 12345678</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope footer-contact-icon"></i>
+                        <p>info@sman1cabangbungin.sch.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 SMAN 1 Cabangbungin. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('.nav-link').on('click', function(event) {
+                event.preventDefault();
+                const target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
+            });
+
+            // Back to top button
+            const backToTopButton = $('#backToTop');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    backToTopButton.addClass('active');
+                } else {
+                    backToTopButton.removeClass('active');
+                }
+            });
+
+            backToTopButton.on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+            });
+
+            // AOS Animation
+            AOS.init();
+        });
+    </script>
+</body>
+</html>
